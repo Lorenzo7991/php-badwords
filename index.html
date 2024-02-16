@@ -7,12 +7,23 @@
     <link rel="icon" href="assets/favicon.ico" type="img/ico">
     <title>Form Badwords</title>
 
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body class="bg-black">
+    <form action="php/index.php" method="GET" class="p-5 mt-3">
+        <label for="paragraph" class="text-success fs-5 mb-2">Paragrafo:</label><br>
+        <textarea id="paragraph" name="paragraph" rows="4" cols="50"
+            class="mb-5 bg-dark text-white shadow p-3 mb-5 rounded"></textarea><br>
+
+        <label for="word" class="text-success fs-5 mb-2">Parola da censurare:</label><br>
+        <input type="text" id="word" name="word" class="bg-dark text-white rounded"><br>
+
+        <button type="submit" class="btn btn-outline-success mx-5 my-5">CENSURA</button>
+    </form>
 
 </body>
 
