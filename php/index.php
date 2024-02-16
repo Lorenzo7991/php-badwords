@@ -13,9 +13,11 @@
 
 <body class="container bg-black">
     <?php
-    // Ottengo il paragrafo e la parola da censurare dall'input del form
-    $paragraph = $_POST["paragraph"];
-    $word = $_POST["word"];
+    // Ottengo il paragrafo e la parola da censurare dall'input del form e applico la funzione trim
+    $paragraph = trim($_POST["paragraph"]);
+    $word = trim($_POST["word"]);
+
+
 
     // Stampo il paragrafo originale e conto i caratteri
     echo "<p class='text-success text-center mt-5 fs-5'>Paragrafo:</p>";
